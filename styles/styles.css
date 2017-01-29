@@ -1,0 +1,18 @@
+.prof-box {
+	text-align: center;
+	width: 50%;
+	display: inline-block;
+	margin: auto;
+	font-family: helvetica;
+}
+#anindya { float:left; }
+#aishika { float:right; }
+.prof-pic {
+	max-width: 100px
+	max-height: 100px;
+	border: 1px solid red;
+}
+img {
+	max-height: 100%;
+	max-width: 100%;
+}

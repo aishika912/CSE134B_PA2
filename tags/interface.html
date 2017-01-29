@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interface</title>
+  <meta name="description" content="Team Page">
+  <meta name="Anindya Basu, Aishika Kumar" content="SitePoint">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Lipstick Finishes</legend>
+			<input list="lipstick-finishes">
+
+			<datalist id="lipstick-finishes">
+			  <option value="Sheer">
+			  <option value="Matte">
+			  <option value="Glossy">
+			</datalist>
+			
+			<button>Submit</button>
+		</fieldset>
+	</form>
+	<select>
+	  <optgroup label="Lipstick types">
+	    <option value="Stick">stick</option>
+	    <option value="Gloss">gloss</option>
+	  </optgroup>
+	  <optgroup label="Tints">
+	    <option value="stain">stain</option>
+	    <option value="spf">spf</option>
+	  </optgroup>
+	</select>
+	<form action="demo_form.asp">
+	  <label for="own">Check if you own this <span style="color:magenta">lipstick already</span></label>
+	  <input type="radio" name="own" id="own" value="own">
+	  <br>
+	</form>
+	<p>Enter how much two lipsticks you want cost so you know how much to save:</p>
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	  <input type="number" id="a" value="10">
+	  +<input type="number" id="b" value="10">
+	  =<output name="x" for="a b"></output>
+	</form>
+	<progress value="15" max="100">Progress towards lipstick saving goal</progress>
+	<br>
+	<meter value="3" min="0" max = "10">3 out of 10 lipsticks are red</meter>
+	<br>
+	<textarea rows="4" cols="50">
+		Text areas are multi line inputs 
+	</textarea>
+	<noscript><small>Your browser does not support JavaScript!</small></noscript>
+	<br><br>
+	<a href="../sitemap.html">&lt;&lt; Back to Site Map</a>
+	<br><br>
+	<address>
+		Written by Anindya Basu and Aishika Kumar
+		abasu@ucsd.edu
+	</address>
+</body>
+</html>

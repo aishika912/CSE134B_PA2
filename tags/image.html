@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Image</title>
+  <meta name="description" content="Team Page">
+  <meta name="Anindya Basu, Aishika Kumar" content="SitePoint">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>
+	This assignment is for <abbr title="Web Client Languages">CSE 134B PA2</abbr>. Here we are testing the HTML tags that we did not use in our wireframes.
+</p>
+<figure>
+  <img src="../pic/dog.jpg" width="300" height="300" alt="dog" usemap="#dogmap">
+  <figcaption>Fig 1.1 - Here we have a cute dog.</figcaption>
+</figure>
+
+<p>Testing the map tag - click top right corner of picture</p>
+<map name="dogmap">
+  <area shape="rect" coords="0,0,82,126" onclick="openAlert()">
+</map>
+<audio controls>
+  <source src="../pic/dogbark.mp3" type="audio/mp3">
+  Bark!
+</audio>
+
+<p> Canvas tag test </p>
+<canvas id="test-canvas"></canvas>
+
+<script>
+  function openAlert() {
+	 alert("It's a dog!!");
+  }
+
+  var canvas = document.getElementById("test-canvas");
+  var mycontext = canvas.getContext("2d");
+  mycontext.fillStyle = "#009999";
+  mycontext.fillRect(0,0,100,100);
+</script>
+
+<br><br>
+<a href="../sitemap.html">&lt;&lt; Back to Site Map</a>
+<br><br>
+<address>
+	Written by Anindya Basu and Aishika Kumar
+	abasu@ucsd.edu
+</address>
+</body>
+</html>
